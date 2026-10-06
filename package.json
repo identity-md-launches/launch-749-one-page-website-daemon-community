@@ -1,0 +1,29 @@
+{
+  "name": "daemon-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build && tsx scripts/prerender.tsx",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host 0.0.0.0",
+    "validate": "tsx --test scripts/market.test.ts && playwright test"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.1",
+    "@playwright/test": "1.58.2",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.1"
+  },
+  "overrides": { "playwright-core": "1.58.2" },
+  "engines": { "node": ">=22.12.0" }
+}

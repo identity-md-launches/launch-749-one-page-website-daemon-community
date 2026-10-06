@@ -1,0 +1,13 @@
+# Budget: 512 bytes; see artifacts/path-budget.md. dist/ is delivered.
+node_modules/
+.npm/
+.cache/
+.vite/
+.parcel-cache/
+.turbo/
+coverage/
+playwright-report/
+.playwright-mcp/
+test-results/
+*.tsbuildinfo
+/test/scratch/
